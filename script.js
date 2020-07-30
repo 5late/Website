@@ -1,12 +1,17 @@
-function toggle_light_mode() {
-    var app = document.getElementByTagName("BODY")[0];
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {scrollDown()};
 
-    if (localStorage.lightMode == "dark") {
-        localStorage.lightMode = "light";
-        app.setAttribute("data-light-mode", "light");
-    }   else {
-        localStorage.lightMode = "dark";
-        app.setAttribute("data-light-mode", "dark");
-    }
-    console.log("lightMode = " + localStorage.lightMode);
+// Get the header
+var Entry = document.getElementsById("entry");
+
+// Get the offset position of the navbar
+var sticky = Entry.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function scrollDown() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }
