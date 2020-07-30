@@ -169,7 +169,7 @@ background-color: #d017e9;
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: unset;
 }
 
 .emailButton{
@@ -280,4 +280,10 @@ input[type="checkbox"]:checked ~ .check:after {
     background-color: #1c1d1d;
     right: 2px;
     transform: translateX(-50px);
+}
+
+.poll {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
