@@ -239,7 +239,7 @@ input[type="checkbox"]:checked ~ .check:before {
 }
 
 input[type="checkbox"]:checked ~ .check {
-    background-color: #ffffff;
+    background-color: #1c1d1d;
     box-shadow: 0 0 0 50000px #1c1d1d;
 }
 
@@ -259,12 +259,12 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .check:before {
-    background-color: #ffffff;
+    background-color: #1c1d1d;
     left: 2px;
 }
 
 .check {
-    background-color: #1c1d1d;
+    background-color: #fff;
     border-radius: 20px;
     cursor: pointer;
     display: block;
@@ -277,7 +277,7 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .check:after {
-    background-color: #1c1d1d;
+    background-color: #fff;
     right: 2px;
     transform: translateX(-50px);
 }
@@ -286,4 +286,5 @@ input[type="checkbox"]:checked ~ .check:after {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    top: auto;
 }
