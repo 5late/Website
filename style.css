@@ -266,6 +266,7 @@ background-color: #d017e9;
     background-color: #fff;
     opacity: 0;
     transition: all 0.3s ease-in;
+    text-decoration: none;
 }
 
 .details h1 {
