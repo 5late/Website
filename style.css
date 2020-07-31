@@ -98,13 +98,13 @@ ol li:hover{
 .b {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
 }
 .c {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
 }
 .d {
@@ -212,6 +212,13 @@ background-color: #d017e9;
     transform: translate(0) scale(1.2);
 }
 
+.socialsPage {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .email {
     margin: 1%;
     width: 80vw;
@@ -223,6 +230,8 @@ background-color: #d017e9;
     display: flex;
     justify-content: center;
     align-items: unset;
+    position: relative;
+    z-index: 2;
 }
 
 .emailButton{
@@ -340,4 +349,6 @@ input[type="checkbox"]:checked ~ .check:after {
     justify-content: center;
     align-items: baseline;
     top: auto;
+    position: relative;
+    z-index: 1;
 }
