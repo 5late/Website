@@ -25,7 +25,7 @@
     font-size: xx-large;
     color: #4c167e;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -295,7 +295,7 @@ input[type="checkbox"] {
     display: none;
     visibility: hidden;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
 input[type="checkbox"]:checked ~ .check:before {
@@ -354,3 +354,10 @@ input[type="checkbox"]:checked ~ .check:after {
     position: relative;
     z-index: 1;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
