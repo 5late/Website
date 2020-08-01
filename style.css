@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #e0ddcc;
+    background-color: #1c1d1d;
 }
 
 .navBar{
@@ -305,8 +305,8 @@ input[type="checkbox"]:checked ~ .check:before {
 }
 
 input[type="checkbox"]:checked ~ .check {
-    background-color: #1c1d1d;
-    box-shadow: 0 0 0 50000px #1c1d1d;
+    background-color: #e0ddcc;
+    box-shadow: 0 0 0 50000px #e0ddcc;
 }
 
 input[type="checkbox"]:checked ~ .check:after {
@@ -325,12 +325,12 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .check:before {
-    background-color: #1c1d1d;
+    background-color: #fff;
     left: 2px;
 }
 
 .check {
-    background-color: #fff;
+    background-color: #1c1d1d;
     border-radius: 20px;
     cursor: pointer;
     display: block;
@@ -343,7 +343,7 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .check:after {
-    background-color: #fff;
+    background-color: #1c1d1d;
     right: 2px;
     transform: translateX(-50px);
 }
