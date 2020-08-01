@@ -361,3 +361,44 @@ input[type="checkbox"]:checked ~ .check:after {
     width: 100%
   }
   
+#preLoader{
+    position: absolute;
+    top: 50%;
+    left: 50%;  transform: translate(-50%, -50%);
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-radius: 50%;
+    animation: loading 2s linear infinite;
+}
+
+#one {
+    width: 100px;
+    height: 100px;
+}
+
+#two {
+    width: 70px;
+    height: 70px;
+}
+
+#three {
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
