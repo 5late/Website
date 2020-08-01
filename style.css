@@ -282,7 +282,7 @@ background-color: #d017e9;
 }
 
 .profilePic:hover img {
-    transform: scale(3);
+    transform: scale(5);
     filter: blur(3px);
 }
 
