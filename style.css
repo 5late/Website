@@ -4,6 +4,10 @@
 }
 
 
+body{
+    background-color: #e0ddcc;
+}
+
 .navBar{
     position: relative;
     background-color: black;
@@ -221,10 +225,10 @@ background-color: #d017e9;
 
 .email {
     margin: 1%;
-    width: 80vw;
-    height: 55.5vh;
+    width: 40vw;
+    height: 25vh;
     text-decoration: none;
-    font-size: 20vh;
+    font-size: 10vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     display: flex;
@@ -347,12 +351,14 @@ input[type="checkbox"]:checked ~ .check:after {
 }
 
 .poll {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    top: auto;
-    position: relative;
+    position: absolute;
+    top: 90%; left: 10%;
     z-index: 1;
+}
+
+.bugReport {
+position: absolute;
+top: 90%; left: 50%;
 }
 
 .sticky {
@@ -430,4 +436,11 @@ input[type="checkbox"]:checked ~ .check:after {
     transform: scale(4);
     position: absolute;
     top: 40%; left: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color:#fff;
+        background:#333333
+    }
 }
