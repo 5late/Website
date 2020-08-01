@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clips</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <nav>
@@ -13,7 +14,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="clips.html">Clips</a></li>
                 <li><a href="contactme.html">Contact Me</a></li>
-                <li><a href="#">test</a></li>
+                <li><a href="development.html">Development</a></li>
             </ol>
         </div>
         </nav>
@@ -35,5 +36,20 @@
         </section>
         </section>
 
+        <div id="preLoader">
+            <div class="circle" id="one">
+                <div class="circle" id="two">
+                    <div class="circle" id="three"></div>
+                </div>
+            </div>
+        </div>
+
+<script>
+        
+setTimeout(function() {
+    $('#preLoader').fadeOut('fast');
+}, 1500); 
+        
+</script>
 </body>
 </html>
