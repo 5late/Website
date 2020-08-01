@@ -245,9 +245,9 @@ background-color: #d017e9;
 }
 
 .profilePic {
-    width: 300px; height: 400px;
-    position: relative;
-    top: -900px;
+    width: 30vw; height: 60vh;
+    position: absolute;
+    top: 20%;
     overflow: hidden;
     cursor: pointer;
     border: 5px solid #fff;
@@ -278,6 +278,7 @@ background-color: #d017e9;
     white-space: nowrap;
     font-size: 25px;
     font-weight: 100;
+    text-decoration: none;
 }
 
 .profilePic:hover img {
