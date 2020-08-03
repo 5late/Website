@@ -3,9 +3,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body{
     background-color: #1c1d1d;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navBar{
@@ -418,12 +426,18 @@ top: 90%; left: 50%;
 
 .githubButtontext {
     text-decoration: none;
-    font-size: larger;
+    font-size: x-large;
     position: absolute;
-    top: 45%; left: 41%;
-    color: #fff;
+    top: 45%; left: 39%;
+    width: max-content;
+    height: max-content;
+    color: #c99a9a;
     font-family: Arial, Helvetica, sans-serif;
-    background: #4e4e4e;
+    background: rgba(0, 0, 0, 0) ;
+    border: rgba(0, 0, 0, 0.900) solid 2px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: #000000 10;
 }
 
 .devepBody{
@@ -451,6 +465,109 @@ top: 90%; left: 50%;
     top: 450%; left: 1.5%;
 }
 
+.SectionButtons {
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    width: 100%;
+    top: 52%; 
+    box-shadow: 0px 0px 0px 0px #967345da;
+}
+
+#devepEmbed {
+    position: absolute;
+    top: 550%; left: 6%;
+}
+
+
+.devepButton {
+    background-color: #96734509;
+    width: 10%;
+    height: 10vh;
+    border: 0px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px #967345da;
+}
+
+.devepButton:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0px 0px 25px 0px #8a7847b9;
+}
+
+.devepButton:hover:after {
+    transform: translate(0);
+}
+
+.devepButtonEmbed {
+    font-size: large;
+    color: rgba(19, 18, 18, 0.555);
+    font-weight: 700;
+}
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #967345da;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+  }
+  
+  #back-to-top-btn i {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+  }
+  
+  /* Animations */
+  .btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+  
+  /* fadeInUp */
+  @keyframes btnEntrance {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+  }
+  
+  /* fadeOutDown */
+  @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  
 
 @media (prefers-color-scheme: dark) {
     body {
